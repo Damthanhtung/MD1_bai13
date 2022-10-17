@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập từ:
+<input type="text" id="nhap" style="width: 150px">
+<input type="button" value="Dịch" onclick="check()">
+<p id="result" ></p>
+<script>
+    function check() {
+        a = document.getElementById('nhap').value;
+        let arr1 = ['dog', 'cat', 'chicken', 'fish'];
+        let arr2 = ['chó', 'mèo', 'gà', 'cá'];
+        for (let i = 0; i < arr1.length; i++) {
+         if (arr1[i]==a) {
+             document.getElementById('result').innerHTML = arr2[i];
+         }
+        }
+    }
+</script>
+
+
+
+</body>
+</html>
